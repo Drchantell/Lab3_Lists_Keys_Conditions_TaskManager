@@ -45,11 +45,16 @@ function App() {
   })
 
   return (
-    <main className="app">
-      <div className="container">
-        <header>
-          <h1>Dr. McDowell's Task Manger</h1>
-          <p>Lab 3: Lists, Keys, and Conditionals</p>
+    <main className="min-h-screen bg-violet-100 px-4 py-8 text-slate-800 sm:px-6">
+      <div className="mx-auto max-w-3xl">
+        <header className="mb-7 text-center">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-700">
+            Lab 3
+          </p>
+          <h1 className="text-3xl font-black tracking-tight text-violet-950 sm:text-4xl">
+            Dr. McDowell's Task Manager
+          </h1>
+          <p className="mt-2 text-violet-800">Lists, Keys, and Conditionals</p>
         </header>
 
         <TaskFilter
