@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --lavender: #eee4ff;
+  --light-lavender: #faf7ff;
+  --hot-pink: #ff1493;
+  --dark-pink: #c90070;
+  --ink: #321c3d;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--lavender);
+  color: var(--ink);
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 16px;
+}
+
+.container {
+  width: min(850px, 100%);
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin-bottom: 6px;
+  color: var(--dark-pink);
+}
+
+header p {
+  margin-top: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding: 18px;
+  background: var(--light-lavender);
+  border: 2px solid var(--hot-pink);
+  border-radius: 10px;
+}
+
+.filters label,
+.task-actions label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.filters label {
+  flex: 1;
+}
+
+select {
+  padding: 9px;
+  border: 2px solid #cdaeff;
+  border-radius: 6px;
+  background: white;
+  color: var(--ink);
+}
+
+.task-list {
+  display: grid;
+  gap: 14px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+  background: var(--light-lavender);
+  border-left: 6px solid var(--hot-pink);
+  border-radius: 10px;
+}
+
+.task-card.completed {
+  background: #e2d1ff;
+  border-left-color: var(--dark-pink);
+}
+
+.task-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.message {
+  margin-bottom: 0;
+}
+
+.complete-message {
+  font-weight: bold;
+}
+
+.work-message {
+  color: #765982;
+}
+
+.task-actions {
+  min-width: 180px;
+}
+
+.task-actions button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 9px 12px;
+  border: 2px solid var(--dark-pink);
+  border-radius: 6px;
+  background: var(--hot-pink);
+  color: white;
+  cursor: pointer;
+}
+
+.empty-message {
+  padding: 22px;
+  text-align: center;
+  background: var(--light-lavender);
+  border: 2px solid var(--hot-pink);
+  border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+  .filters,
+  .task-card {
+    flex-direction: column;
+  }
+
+  .task-actions {
+    min-width: 0;
+  }
+}
