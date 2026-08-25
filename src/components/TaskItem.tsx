@@ -9,30 +9,30 @@ export function TaskItem({
 
   return (
     <article
-      className={`flex flex-col justify-between gap-5 rounded-xl border-l-4 bg-white p-5 shadow-sm transition hover:shadow-md sm:flex-row ${
+      className={`flex flex-col justify-between gap-5 rounded-3xl border-l-4 bg-white/95 p-5 shadow-xl shadow-pink-100 transition hover:-translate-y-0.5 hover:shadow-pink-200 sm:flex-row ${
         isCompleted
-          ? 'border-emerald-500 bg-emerald-50/60'
+          ? 'border-pink-300 bg-pink-50'
           : 'border-pink-500'
       }`}
     >
       <div>
-        <h2 className="text-xl font-bold text-violet-950">{task.title}</h2>
-        <p className="mt-2 text-sm text-slate-600">
-          Priority: <strong className="capitalize text-violet-900">{task.priority}</strong>
+        <h2 className="font-serif text-xl font-bold text-zinc-950">{task.title}</h2>
+        <p className="mt-2 text-sm text-zinc-600">
+          Priority: <strong className="capitalize text-pink-700">{task.priority}</strong>
         </p>
 
         {isCompleted ? (
-          <p className="mt-4 font-semibold text-emerald-700">Task completed!</p>
+          <p className="mt-4 font-semibold text-pink-600">Task completed!</p>
         ) : (
-          <p className="mt-4 text-sm text-violet-700">This task still needs work.</p>
+          <p className="mt-4 text-sm text-zinc-600">This task still needs work.</p>
         )}
       </div>
 
       <div className="min-w-44 sm:self-start">
-        <label className="flex flex-col gap-2 text-sm font-bold text-violet-950">
+        <label className="flex flex-col gap-2 text-sm font-bold text-zinc-900">
           Status
           <select
-            className="rounded-lg border border-violet-200 bg-violet-50 px-3 py-2 font-normal text-slate-700 outline-none transition focus:border-pink-500 focus:ring-2 focus:ring-pink-200"
+            className="rounded-xl border border-pink-200 bg-pink-50 px-3 py-2 font-normal text-zinc-800 outline-none transition focus:border-pink-500 focus:ring-2 focus:ring-pink-200"
             value={task.status}
             onChange={(event) =>
               onStatusChange(task.id, event.target.value as TaskStatus)
@@ -45,7 +45,7 @@ export function TaskItem({
         </label>
 
         <button
-          className="mt-3 w-full rounded-lg bg-pink-600 px-3 py-2 text-sm font-bold text-white transition hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2"
+          className="mt-3 w-full rounded-xl bg-zinc-950 px-3 py-2 text-sm font-bold text-pink-300 transition hover:bg-pink-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2"
           type="button"
           onClick={() => onDelete(task.id)}
         >

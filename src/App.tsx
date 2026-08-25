@@ -45,16 +45,17 @@ function App() {
   })
 
   return (
-    <main className="min-h-screen bg-violet-100 px-4 py-8 text-slate-800 sm:px-6">
+    <main className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-fuchsia-100 px-4 py-8 text-zinc-900 sm:px-6">
       <div className="mx-auto max-w-3xl">
         <header className="mb-7 text-center">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-700">
+          <div className="mx-auto mb-4 h-1 w-16 rounded-full bg-pink-500" />
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-pink-600">
             Lab 3
           </p>
-          <h1 className="text-3xl font-black tracking-tight text-violet-950 sm:text-4xl">
+          <h1 className="font-serif text-3xl font-black italic tracking-tight text-pink-600 sm:text-4xl">
             Dr. McDowell's Task Manager
           </h1>
-          <p className="mt-2 text-violet-800">Lists, Keys, and Conditionals</p>
+          <p className="mt-2 text-zinc-600">Lists, Keys, and Conditionals</p>
         </header>
 
         <TaskFilter

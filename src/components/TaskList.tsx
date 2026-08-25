@@ -8,7 +8,7 @@ export function TaskList({
 }: TaskListProps) {
   if (tasks.length === 0) {
     return (
-      <p className="rounded-xl border border-dashed border-violet-300 bg-white p-6 text-center text-violet-700 shadow-sm">
+      <p className="rounded-3xl border border-dashed border-pink-300 bg-white/90 p-6 text-center text-pink-700 shadow-lg shadow-pink-100">
         No tasks match the selected filters.
       </p>
     )
