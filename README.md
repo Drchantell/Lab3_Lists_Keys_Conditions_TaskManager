@@ -1,25 +1,19 @@
 Lab 3: Lists, Keys, and Conditionals Project Overview
 
-I created a simple beginner React and TypeScript Task Manager. My project allows the user to view tasks, filter tasks by status, filter tasks by priority, change task status, delete tasks, see different task styles, and see a message when no tasks match the filters.
+This project is a beginner React and TypeScript task manager app. The main goal is to practice working with lists, keys, and conditional rendering while also learning how to manage state in React.
 
-React Concepts Used
-I used .map() to display the tasks. I gave each task a unique id, and I used that id as the React key. I also used conditional rendering to show different messages based on the task status. I used TypeScript interfaces and types for the tasks and component props.
+I created a task list that displays multiple tasks in a clean layout. I used `.map()` to loop through the array of tasks and render each one as a separate card. Each task has a unique `id`, and I used that `id` as the React `key` so React can track each item correctly when the list changes.
 
-How to Run
-I open the project in VS Code. In the terminal, I run npm install. After that, I run npm run dev. Then I open the local address shown in the terminal to view the project in the browser.
+I also added filters for task status and priority. The app checks whether each task matches the selected filters before rendering it. This is done with simple conditional logic inside the filter function. If no task matches the chosen filters, the app displays a message telling the user there are no matching tasks.
 
-Reflection
+I implemented task status updates by storing the tasks in state and using `.map()` to update the correct task when the dropdown changes. I also added a delete button so the user can remove a task from the list by filtering the array based on the matching `id`.
 
-How did you ensure unique keys for your list items?
-I gave every task a unique id. I used the task id as the key when I displayed the tasks with .map().
+Conditional rendering is used throughout the app for different messages. For example, if a task is marked as completed, the app shows “Task completed!” Otherwise, it shows “This task still needs work.”
 
-What considerations did you make when implementing the filtering functionality?
-I made sure the user could filter by status, priority, or both. If no filter is selected, all tasks show.
+The project demonstrates the beginner React concepts of state, props, list rendering, keys, conditional rendering, and simple user interaction.
 
-How did you handle state updates for task status changes?
-I used useState and .map(). When the status changes, I find the matching task id and update that task.
+This project shows how React can be used to manage a small list of tasks in a simple but effective way.
 
-What challenges did you face when implementing conditional rendering?
-I had a little trouble understanding when to show different information. I used a simple condition to show one message for completed tasks and another message for tasks that still need work.
+
 
 Author: Dr. Chantell McDowell, Per Scholas Student.
