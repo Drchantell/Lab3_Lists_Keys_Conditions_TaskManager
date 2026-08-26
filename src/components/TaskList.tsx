@@ -6,9 +6,12 @@ export function TaskList({
   onStatusChange,
   onDelete,
 }: TaskListProps) {
-  if (tasks.length === 0) {
+  if (!tasks || tasks.length === 0) {
     return (
-      <p className="rounded-3xl border border-dashed border-pink-500/60 bg-[#121212] p-6 text-center text-pink-200 shadow-lg shadow-pink-500/10">
+      <p
+        aria-live="polite"
+        className="rounded-3xl border border-dashed border-pink-500/60 bg-[#121212] p-6 text-center text-pink-200"
+      >
         No tasks match the selected filters.
       </p>
     )
