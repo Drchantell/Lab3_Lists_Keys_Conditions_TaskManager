@@ -2,8 +2,8 @@
 
 :root {
   color: #fdf2f8;
-  background-color: #050505;
-  font-family: Inter, "Segoe UI", sans-serif;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -11,15 +11,13 @@
 }
 
 html {
-  background: #050505;
+  background: #000000;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top, rgba(236, 72, 153, 0.18), transparent 30%),
-    linear-gradient(135deg, #050505 0%, #0b0b0b 35%, #141414 100%);
+  background: #000000;
   color: #fdf2f8;
 }
 
@@ -28,6 +26,6 @@ body {
 }
 
 ::selection {
-  background: rgba(236, 72, 153, 0.8);
-  color: white;
+  background: #ec4899;
+  color: #ffffff;
 }

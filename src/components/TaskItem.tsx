@@ -9,8 +9,10 @@ export function TaskItem({
 
   return (
     <article
-      className={`flex flex-col justify-between gap-5 rounded-3xl border border-pink-500/40 bg-[#111111]/95 p-5 shadow-xl shadow-pink-500/10 transition hover:-translate-y-0.5 hover:shadow-pink-500/20 sm:flex-row ${
-        isCompleted ? 'border-pink-400/70 bg-[#1a1017]' : 'border-pink-500/80'
+      className={`flex flex-col justify-between gap-5 rounded-2xl border p-5 transition sm:flex-row ${
+        isCompleted
+          ? 'border-pink-400/70 bg-[#1d1016]'
+          : 'border-pink-500/60 bg-[#111111]'
       }`}
     >
       <div>
@@ -30,7 +32,7 @@ export function TaskItem({
         <label className="flex flex-col gap-2 text-sm font-bold text-pink-50">
           Status
           <select
-            className="rounded-xl border border-pink-400/60 bg-[#1d1d1d] px-3 py-2 font-normal text-pink-50 outline-none transition focus:border-pink-500 focus:ring-2 focus:ring-pink-400/60"
+            className="rounded-xl border border-pink-400/60 bg-[#1d1d1d] px-3 py-2 font-normal text-pink-50 outline-none transition focus:border-pink-500"
             value={task.status}
             onChange={(event) =>
               onStatusChange(task.id, event.target.value as TaskStatus)
@@ -43,7 +45,7 @@ export function TaskItem({
         </label>
 
         <button
-          className="mt-3 w-full rounded-xl bg-pink-500 px-3 py-2 text-sm font-bold text-white transition hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2 focus:ring-offset-[#111111]"
+          className="mt-3 w-full rounded-xl bg-pink-500 px-3 py-2 text-sm font-bold text-white transition hover:bg-pink-400"
           type="button"
           onClick={() => onDelete(task.id)}
         >

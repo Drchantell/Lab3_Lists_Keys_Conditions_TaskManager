@@ -48,8 +48,8 @@ function App() {
     <main className="min-h-screen bg-[#050505] px-4 py-8 text-pink-50 sm:px-6">
       <div className="mx-auto max-w-3xl">
         <header className="mb-7 text-center">
-          <div className="mx-auto mb-4 h-1 w-20 rounded-full bg-pink-500 shadow-[0_0_18px_rgba(236,72,153,0.7)]" />
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.3em] text-pink-400">
+          <div className="mx-auto mb-4 h-1 w-16 rounded-full bg-pink-500" />
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-pink-400">
             Lab 3
           </p>
           <h1 className="font-serif text-3xl font-black italic tracking-tight text-pink-500 sm:text-4xl">
@@ -60,7 +60,7 @@ function App() {
           </p>
         </header>
 
-        <div className="mb-5 flex items-center justify-between rounded-2xl border border-pink-500/40 bg-black/50 px-4 py-3 text-sm text-pink-100 shadow-lg shadow-pink-500/10">
+        <div className="mb-5 flex items-center justify-between rounded-2xl border border-pink-500/40 bg-[#111111] px-4 py-3 text-sm text-pink-100">
           <span className="font-semibold uppercase tracking-[0.2em] text-pink-300">
             Tasks
           </span>
