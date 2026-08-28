@@ -15,8 +15,7 @@ Question 3.  How did you handle state updates for task status changes?
 I used useState and map() to find the right task and update its status.
 
 
-Question 4.  
-What challenges did you face when implementing conditional rendering?
+Question 4.  What challenges did you face when implementing conditional rendering?
 
 The hardest part was understanding conditional rendering and knowing when to show different messages. I had to practice it a little before it made sense.
 
