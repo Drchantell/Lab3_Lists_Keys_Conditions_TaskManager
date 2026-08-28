@@ -1,6 +1,6 @@
 Lab 3: Lists, Keys, and Conditionals Project Overview
 
-This project is a beginner React and TypeScript task manager app. The main goal is to practice working with lists, keys, and conditional rendering while also learning how to manage state in React.
+This project is a beginner React and TypeScript task manager app. The main goal was to practice working with lists, keys, and conditional rendering while also learning how to manage state in React.
 
 I created a task list that displays multiple tasks in a clean layout. I used `.map()` to loop through the array of tasks and render each one as a separate card. Each task has a unique `id`, and I used that `id` as the React `key` so React can track each item correctly when the list changes.
 
